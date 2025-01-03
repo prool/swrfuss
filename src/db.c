@@ -8230,9 +8230,9 @@ void tail_chain( void )
 
 size_t mudstrlcpy( char *dst, const char *src, size_t siz )
 {
-  register char *d = dst;
-  register const char *s = src;
-  register size_t n = siz;
+  char *d = dst;
+  const char *s = src;
+  size_t n = siz;
 
   if( !src )
     {
@@ -8274,9 +8274,9 @@ size_t mudstrlcpy( char *dst, const char *src, size_t siz )
 
 size_t mudstrlcat( char *dst, const char *src, size_t siz )
 {
-  register char *d = dst;
-  register const char *s = src;
-  register size_t n = siz;
+  char *d = dst;
+  const char *s = src;
+  size_t n = siz;
   size_t dlen;
 
   if( !src )
